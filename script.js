@@ -72,7 +72,44 @@ for(let x of arrayyy){
     }
 }
 
-// // functions
-// // 1 მაგალითი
-// function sum ( 2, -9, 5, 11, -30, 100, -8, -11, -4, 5, -6, 8 ) {
-// }
+functions
+// 1 მაგალითი
+function sum ( ...args) {
+    let numbersum=0
+    for(let item of args){
+        if(item>0)
+        numbersum=numbersum+item
+    }
+    return numbersum
+}
+let result=sum(2, -9, 5, 11, -30, 100, -8, -11, -4, 5, -6, 8);
+console.log(result);
+
+// 2 მაგალითი
+function sum(...args){
+    let numbersum=0;
+    for(let item of args){
+        numbersum=numbersum+item;
+    }
+    return numbersum;
+}
+    let result=sum(10, 50, 6, 7, 8, 11, 6, 3, 9);
+    console.log(result);
+
+//     // 3 მაგალითი
+function test(){
+    let user = {
+        firstname: 'giorgi',
+        lastname: 'saakadze',
+        age: 32,
+        isloggedin: true
+      }
+        if(user.isloggedin=true) {
+        console.log('giorgi','saakadze');
+        }else if (user.isloggedin=false){
+        console.log('false');
+        }else {
+        console.log('error');
+        }
+
+
