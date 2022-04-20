@@ -96,7 +96,7 @@ function sum(...args){
     let result=sum(10, 50, 6, 7, 8, 11, 6, 3, 9);
     console.log(result);
 
-//     // 3 მაგალითი
+    // 3 მაგალითი
 function test(){
     let user = {
         firstname: 'giorgi',
@@ -104,12 +104,12 @@ function test(){
         age: 32,
         isloggedin: true
       }
-        if(user.isloggedin=true) {
-        console.log('giorgi','saakadze');
-        }else if (user.isloggedin=false){
+        if(user.isloggedin==true) {
+        console.log(user.firstname,user.lastname);
+        }else if (user.isloggedin==false){
         console.log('false');
         }else {
         console.log('error');
         }
-
-
+    }
+    let result=test();
