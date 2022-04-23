@@ -113,3 +113,16 @@ function test(){
         }
     }
     let result=test();
+
+    // 4 მაგალითი
+    function max(numbers){
+        let maxValue = 0;
+
+        for(let item of numbers){
+            if(item > maxValue){
+                maxValue = item;
+            }
+        }
+        return maxValue;
+    }
+        console.log(max([5,102,120,10,3,250,30]));
